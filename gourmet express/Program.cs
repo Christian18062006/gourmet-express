@@ -7,7 +7,8 @@ using (HttpClient client = new HttpClient())
     {
         string resposta = await client.GetStringAsync("http://127.0.0.1:8000/foods");
         var json = JsonSerializer.Deserialize<List<Food>>(resposta);
-        Console.WriteLine(json);
+        Food.ListarComidas(json);
+        Food.ExibirInformacoes(json[0]);
     }
     catch (Exception ex)
     {
