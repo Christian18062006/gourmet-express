@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gourmet express", "gourmet express\gourmet express.csproj", "{532E220B-32C3-412F-A406-B3174D118AFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{532E220B-32C3-412F-A406-B3174D118AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{532E220B-32C3-412F-A406-B3174D118AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{532E220B-32C3-412F-A406-B3174D118AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{532E220B-32C3-412F-A406-B3174D118AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46DB00EC-4924-4490-B730-279BB5CF4D09}
+	EndGlobalSection
+EndGlobal
