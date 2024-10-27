@@ -1,9 +1,13 @@
-﻿using (HttpClient client = new HttpClient())
+﻿using gourmet_express.modelos;
+using System.Text.Json;
+
+using (HttpClient client = new HttpClient())
 {
     try
     {
         string resposta = await client.GetStringAsync("http://127.0.0.1:8000/foods");
-        Console.WriteLine(resposta);
+        var json = JsonSerializer.Deserialize<List<Food>>(resposta);
+        Console.WriteLine(json);
     }
     catch (Exception ex)
     {
