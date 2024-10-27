@@ -1,4 +1,5 @@
-﻿using gourmet_express.modelos;
+﻿using gourmet_express.Filtros;
+using gourmet_express.modelos;
 using System.Text.Json;
 
 using (HttpClient client = new HttpClient())
@@ -9,6 +10,7 @@ using (HttpClient client = new HttpClient())
         var json = JsonSerializer.Deserialize<List<Food>>(resposta);
         Food.ListarComidas(json);
         Food.ExibirInformacoes(json[0]);
+        LinqFiltroAutor.OrdenarAutores(json);
     }
     catch (Exception ex)
     {
