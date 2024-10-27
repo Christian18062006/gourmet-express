@@ -7,7 +7,7 @@
     }
     catch (Exception ex)
     {
-        Console.WriteLine(ex);
+        Console.WriteLine($"Erro: {ex}");
     }
 }
 namespace gourmet_express
