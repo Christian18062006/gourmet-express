@@ -11,6 +11,7 @@ using (HttpClient client = new HttpClient())
         Food.ListarComidas(json);
         Food.ExibirInformacoes(json[0]);
         LinqFiltroAutor.OrdenarAutores(json);
+        LinqFiltroComidaCurta.OrdenarComidasCurtas(json);
     }
     catch (Exception ex)
     {
